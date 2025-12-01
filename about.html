@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="profile-pic.png" type="image/x-icon">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(12, 15, 43);  
+            overflow-x: hidden;
+
+
+        }
+    @media(min-width:600px){
+        .header1{
+            height:4.4vw;
+            width: 100%;
+            background-color: rgb(2, 2, 34);
+            box-shadow: 0 0 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid white; */
+
+        }
+        .header{
+            display: none;
+        }
+        .hleft{
+            height:4.4vw;
+            width:12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* gap: 10px; */
+            /* border: 2px solid white; */
+
+        }
+       
+        .port{
+            height: 40px;
+            width: 50%;
+            /* background-color: rgb(84, 186, 226); */
+            /* border-radius: 10px; */
+            /* margin-top: 12px; */
+               color: rgb(252, 34, 226);
+            font-size: 2.5vw;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .folio{
+
+            font-size: 2.5vw;
+            color:yellowgreen;
+            height: 40px;
+            width:49%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .hright{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            /* border: .2vw solid aquamarine; */
+
+        }
+        .anchor{
+            /* border-right: .2vw solid azure; */
+            width: 60%;
+            height: 2.5vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .anchor a{
+            text-decoration: none;
+            color:azure;
+            font-size: 1.3vw;
+        }
+        .home  :hover{
+            color:rgb(4, 238, 255) ;
+        }
+        .house a{
+            color:rgb(4, 238, 255) ;
+        }
+        .button{
+            height:100%;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hover{
+            height: 2vw;
+            width: 7.5vw;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(255, 3, 255); 
+            color: azure;
+            /* border: 2px solid wheat; */
+        }
+        .button a{
+            text-decoration: none;
+            color: azure;
+            font-size: 1vw;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
+        .hover:hover{
+            box-shadow: 0 0 12px rgb(255, 3, 255);
+            border: .5px solid azure;
+        }
+        
+        .menu{
+            display: none;
+        }
+        .laptop{
+            height: 90vh;
+            width: 99vw;
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: row;
+        }
+        .text{
+            height: 90vh;
+            width: 59vw;
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+        }
+        .photo{
+            height: 50vw;
+            width: 40vw;
+            /* border: 2px solid white;  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading{
+            height: 10vw;
+            width:25vw;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content:center;
+            align-items: end;
+        }
+        .headcont{
+            height: 80vh;
+            width: 59vw;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content: center;
+            padding-top:10px;
+            /* align-items: center; */
+        }
+        .headabout{
+            height: auto;
+            width: 18vw;
+            font-size: 3.7vw;
+            color:rgb(4, 238, 255);
+            border-right: 2px solid azure;
+        }
+        .headtext{
+            height: auto;
+            width:52vw;
+            color: azure;
+            font-size:1.9vmax;
+            /* font-size: 3vh; */
+        }
+       
+
+        #photo1{
+            border: 1px solid blue;
+            border-radius: 50vw;
+            height:32vw;
+            width: 32vw;
+            box-shadow: 0px 0px 10px 1px  rgb(252, 34, 226);
+            transition: all 1s ease-in  ;
+        }
+        #photo1:hover{
+            box-shadow: 0px 0px 15px 1px  rgb(252, 34, 226);
+            transform: scale(1.05);
+        }
+        .phone{
+            display: none;
+        }
+    }
+    @media(max-width:600px){
+        .header{
+            height:14vw;
+            width: 100%;
+            margin-top: 5p7;
+            background-color: rgb(2, 2, 34);
+            overflow: hidden;
+        }
+        .hleft{
+            height:14vw;
+            width:40vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .port{
+            height:14vw;
+            width: 50%;
+            color: rgb(252, 34, 226);
+            font-size: 6.5vw;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .folio{
+            font-size: 6.5vw;
+            color:yellowgreen;
+            height: 14vw;
+            width:49%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .box button{
+            height:9vw;
+            width: 9vw;
+            margin-right: 6vw;
+            border: none;
+            background-color: rgb(2, 2, 34);
+            }
+        .menu img{
+            height: 100%;
+            width: 100%;
+            }
+        .header1{
+            display: none;
+            }
+        .small{
+            height:14vw;
+            width: 100%;
+            background-color: rgb(2, 2, 34);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+        .home{
+            height:7vw;
+            width: 100%;
+            display: flex;
+            align-items:start ;
+            }
+        .home a{
+            text-decoration: none;
+            color: azure;
+            font-size:4vw;
+            font-family: sans-serif;
+            margin-left:5%;
+            }
+        .home :hover{
+            color:rgb(4, 238, 255) ;
+            }
+        #home{
+            color:rgb(4, 238, 255) ;
+            }
+        .sign{
+            height:12vw;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            }
+        .up{
+            height: 8vw;
+            width:80vw;
+            }
+        .sign button{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 3, 255);
+            border-radius: 5px;
+            color: azure;
+            font-size: 4vw;
+            }
+        .anch{
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: azure;
+        }   
+        .up :hover{
+            box-shadow: 0 0 12px rgb(255, 3, 255);
+            border: .5px solid azure;
+        }
+         .anch:hover{
+            border: 2px solid rgb(252, 34, 226);
+            /* background-color: #fff; */
+            
+        }
+        .phone{
+            height: 90vh;
+            width: 99vw;
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            height: 60vh;
+            width: 99vw;
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: column;
+        }
+        .photo{
+            height: 50vw;
+            width: 70vw;
+            /* border: 2px solid white;  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading{
+            height:20vw;
+            width:43vw;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content:center;
+            align-items: end;
+        }
+        .headcont{
+            height: 80vh;
+            width: 99vw;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content: center;
+            padding-top:10px;
+            /* align-items: center; */
+        }
+        .headabout{
+            height: auto;
+            width: 34vw;
+            font-size: 6.9vw;
+            color:rgb(4, 238, 255);
+            border-right: 2px solid azure;
+        }
+        .headtext{
+            height: auto;
+            width:90vw;
+            color: azure;
+            font-size:2.4vmax;
+            /* font-size: 3vh; */
+        }
+       
+
+        #photo1{
+            border: 1px solid blue;
+            border-radius: 50vw;
+            height:40vw;
+            width: 40vw;
+            box-shadow: 0px 0px 10px 1px  rgb(252, 34, 226);
+            transition: all 1s ease-in  ;
+        }
+        #photo1:hover{
+            box-shadow: 0px 0px 15px 1px  rgb(252, 34, 226);
+            transform: scale(1.05);
+        }
+        .laptop{
+            display: none;
+        }
+    }     
+    </style>
+</head>
+<body>
+    <div class="header1 "  >
+        <div class="hleft">
+            <div class="port">Port</div>
+            <div class="folio">folio</div>
+        </div>
+        <div class="hright">
+            <div class="anchor">
+                <div class="home"><a href="index.html">Home</a></div>
+                <div class="house"><a href="about.html">About </a></div>
+                <div class="home"><a href="">Education</a></div>
+                <div class="home"><a href="">Skill</a></div>
+                <div class="home"><a href="">Experiance</a></div>
+                <div class="home"><a href="">Contact</a></div>
+            </div>
+            <div class="button">
+                <button class="hover"><a href="cv.pdf.pdf">Download CV</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="header box" id="myBox" >
+        <div class="small">
+            <div class="hleft">
+                <div class="port">Port</div>
+                <div class="folio">folio</div>
+            </div>
+            <button class="menu" onclick="toggleHeight()"><img src="menu-bar.png" alt="">
+            </button>
+        </div>
+        <div class="home">
+            <a href="" id="home">Home</a>
+        </div>
+        <div class="home">
+            <a href="">About</a>
+        </div>
+        <div class="home">
+            <a href="">Education</a>
+        </div>
+        <div class="home">
+            <a href="">Skills</a>
+        </div>
+        <div class="home">
+            <a href="">Exprience</a>
+        </div><div class="home">
+            <a href="">Contact</a>
+        </div>
+        <div class="sign">
+            <div class="up">
+               <button class="cv"><a href="cv.pdf.pdf" class="anch">Download CV</a></button> 
+            </div>
+        </div>
+    </div>
+    <div class="laptop">
+        <div class="text">
+            <div class="heading">
+                <div class="headabout">
+                    About Me:
+                </div>
+            </div>
+            <div class="headcont">
+                <div class="headtext">
+                    I am a 2nd-year B.Tech student in Information Technology at Rajkiya Engineering College, Banda. I am passionate about learning new technologies and solving real-world problems through programming. <br><br>
+
+                    Currently, I am focusing on Web Development, where I am learning the core technologies like HTML, CSS, and JavaScript, along with modern frameworks to create responsive and user-friendly websites. In addition, I am also interested in App Development and gradually exploring mobile development tools to build creative applications. <br><br>
+                    I believe in continuous learning and applying my knowledge through practical projects. My academic journey and self-learning have helped me build a strong foundation in coding, logical thinking, and teamwork.
+                </div>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="profile-pic.png" alt="" id="photo1">
+        </div>
+    </div>
+    <div class="phone">
+        <div class="photo">
+            <img src="profile-pic.png" alt="" id="photo1">
+        </div>
+        <div class="text">
+            <div class="heading">
+                <div class="headabout">
+                    About Me:
+                </div>
+            </div>
+            <div class="headcont">
+                <div class="headtext">
+                    I am a 2nd-year B.Tech student in Information Technology at Rajkiya Engineering College, Banda. I am passionate about learning new technologies and solving real-world problems through programming. <br><br>
+
+                    Currently, I am focusing on Web Development, where I am learning the core technologies like HTML, CSS, and JavaScript, along with modern frameworks to create responsive and user-friendly websites. In addition, I am also interested in App Development and gradually exploring mobile development tools to build creative applications. <br><br>
+                    I believe in continuous learning and applying my knowledge through practical projects. My academic journey and self-learning have helped me build a strong foundation in coding, logical thinking, and teamwork.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let isTall = false; // track height state
+
+        function toggleHeight() {
+        const box = document.getElementById('myBox');
+
+        if (!isTall) {
+            box.style.height = '70vw'; // 50% of viewport width
+        } 
+        else {
+            box.style.height = '14vw'; // 30% of viewport width
+        }
+        isTall = !isTall; // toggle state
+        }
+    </script>    
+</body>
+</html>
